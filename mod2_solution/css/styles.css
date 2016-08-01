@@ -1,1 +1,92 @@
+/********** Base styles **********/
+html {
+  font-family: sans-serif;
+  font-size: 20px;
+}
 
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  text-align: center;
+  font-size: ++75%;
+  margin: 15px;
+}
+
+section {
+  display: inline;
+  align-content: center;
+  float: left;
+  padding: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+  background-color: #A9A9A9;
+  border: 1px solid black;
+}
+#sectionFirst {
+  width: 320px;
+  height: 200px;
+}
+#sectionSecond {
+  width: 320px;
+  height: 200px;
+}
+#sectionThird {
+  width: 320px;
+  height: 200px;
+}
+
+div {
+  float: right;
+  width: 150px;
+  border: 1px solid black;
+  text-align: center;
+  font-size: ++25%;
+  margin: -21px -21px 0px 0px;
+  /*position: relative;*/
+}
+#divFirst{
+  background-color: #FFB6C1;
+}
+#divSecond{
+  background-color: #F06E8C;
+  color: white;
+}
+#divThird{
+  background-color: #FAFAD2;
+}
+
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  #sectionFirst {
+    width: 33.33%;
+  }
+  #sectionSecond {
+    width: 33.33%;
+  }
+  #sectionThird{
+    width: 33.33%;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  #sectionFirst, #sectionSecond {
+    width: 50%;
+  }
+  #sectionThird {
+    width: 100%;
+  }
+}
+
+/********** Small devices only **********/
+@media (max-width: 767px) {
+  #sectionFirst, #sectionSecond, #sectionThird {
+    width: 100%;
+  }
+}
